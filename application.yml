@@ -1,0 +1,21 @@
+# shinyproxy application
+proxy:
+  title: Shiny App
+  hide-navbar: false
+  landing-page: /
+  heartbeat-rate: 10000
+  heartbeat-timeout: 600000
+  port: 8080
+  docker:
+    internal-networking: true
+  specs:
+  - id: shiny
+    display-name: Shiny App
+    description: This is a new Shiny app
+    container-cmd: ["R", "-e", "shiny::runApp('/root/app')"]
+    container-image: mynew/shiny-app
+    container-network: net
+    container-env:
+      user: "shiny"
+      environment:
+        - APPLICATION_LOGS_TO_STDOUT=true
