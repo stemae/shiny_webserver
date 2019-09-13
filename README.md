@@ -1,9 +1,9 @@
 ShinyProxy Docker Template
 ================
-Docker compose with an example Shiny-app running on an nginx webserver. 
-The example Shiny app with plotly can be found under webapp/shiny
+Docker compose with an example shiny web-app using plotly running on an nginx webserver. 
+The example app can be found under webapp/shiny
 
-### Docker App Deployment
+### Deployment
 
 1.  Build the Shiny App Docker image:
     `docker build -t mynew/shiny-app ./webapp`
