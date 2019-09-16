@@ -13,6 +13,6 @@ The example app can be found under webapp/shiny
 HTTPS encryption can be configured by adapting the nginx.conf.
 
 more infos under:
-https://www.shinyproxy.io
-https://shiny.rstudio.com/
-https://hub.docker.com/_/nginx
+-   https://www.shinyproxy.io
+-   https://shiny.rstudio.com/
+-   https://hub.docker.com/_/nginx
